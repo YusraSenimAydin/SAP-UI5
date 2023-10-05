@@ -15,7 +15,6 @@ sap.ui.define(
         // call the init function of the parent
         UIComponent.prototype.init.apply(this, arguments);
         // set data models
-
         var oData = {
           recipient: {
             name: "UI5",
@@ -26,13 +25,15 @@ sap.ui.define(
 
         // set dialog
         this._helloDialog = new HelloDialog(this.getRootControl());
+
+        // create the views based on the url/hash
+        this.getRouter().initialize();
       },
 
       exit: function () {
         this._helloDialog.destroy();
         delete this._helloDialog;
       },
-
       openHelloDialog: function () {
         this._helloDialog.open();
       },
