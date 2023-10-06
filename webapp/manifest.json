@@ -11,7 +11,7 @@
     "applicationVersion": {
       "version": "1.0.0"
     },
-    "title": "{{<appTitle>}}",
+    "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "tags": {
       "keywords": ["{{<keyword1>}}", "{{<keyword2>}}"]
@@ -53,8 +53,7 @@
       ],
       "css": [
         {
-          "uri": "css/style.css",
-          "id": "<id>"
+          "uri": "css/style.css"
         }
       ]
     },
@@ -69,7 +68,7 @@
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
           "bundleName": "sap.ui.demo.walkthrough.i18n.i18n",
-          "suppoertedLocales": [""],
+          "supportedLocales": [""],
           "fallbackLocale": ""
         },
         "uri": "<uriRelativeToManifest>"
@@ -128,8 +127,8 @@
       "extensions": {}
     },
     "contentDensities": {
-      "compact": false,
-      "cozy": false
+      "compact": true,
+      "cozy": true
     }
   },
 

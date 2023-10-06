@@ -8,6 +8,7 @@ sap.ui.define(
   ],
   function (Controller, JSONModel, formatter, Filter, FilterOperator) {
     "use strict";
+
     return Controller.extend("sap.ui.demo.walkthrough.controller.InvoiceList", {
       formatter: formatter,
       onInit: function () {
@@ -25,6 +26,7 @@ sap.ui.define(
             new Filter("ProductName", FilterOperator.Contains, sQuery)
           );
         }
+
         // filter binding
         var oList = this.byId("invoiceList");
         var oBinding = oList.getBinding("items");
